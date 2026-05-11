@@ -8,7 +8,7 @@ Projekt je postaven na moderním PHP s důrazem na **objektově orientované pro
 ---
 
 ## ⚙️ Funkcionalita
-*   **Autentizace a autorizace:** Bezpečné přihlášení s rozlišením rolí (Admin vs. SuperAdmin).
+*   **Autentizace a autorizace:** Bezpečné přihlášení s rozlišením rolí (User, Admin vs. SuperAdmin).
 *   **Správa dat (CRUD):** Plná administrace studentů (včetně nahrávání fotografií), škol a uživatelů.
 *   **Dynamický obsah:** Flexibilní správa obsahu webu.
 *   **Komunikace:** Kontaktní formulář pro odesílání e-mailů pomocí PHPMailer.
@@ -64,7 +64,7 @@ DB_PASS=heslo
 ## 🔑 Přístupové údaje (testovací)
 | Role | Email | Heslo |
 | :--- | :--- | :--- |
-| **Super Admin** | `zkom@zkom.cz` | `pondeli4381` |
+| **Super Admin** | `zkom@zkom.cz` | `heslo123` |
 
 *(Doporučeno změnit ihned po první instalaci!)*
 
