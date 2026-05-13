@@ -1,18 +1,22 @@
 # 🎓 Vysoká škola ZKOM – Informační systém
 
 ## 📌 Popis projektu
-Webová aplikace pro komplexní správu obsahu vysoké školy. Umožňuje administraci studentů, vysokých škol, uživatelských účtů a komunikaci přes kontaktní formulář.
+Webová aplikace pro správu studentů, uživatelů a školských dat postavená na PHP a MySQL.
+
+Projekt je zaměřený na backend vývoj, práci s databázemi, autentizaci uživatelů a správu dat v administračním systému.
+
 
 Projekt je postaven na moderním PHP s důrazem na **objektově orientované programování (OOP)**, bezpečnost a čistotu kódu.
 
 ---
 
 ## ⚙️ Funkcionalita
-*   **Autentizace a autorizace:** Bezpečné přihlášení s rozlišením rolí (User, Admin vs. SuperAdmin).
-*   **Správa dat (CRUD):** Plná administrace studentů (včetně nahrávání fotografií), škol a uživatelů.
+*   **Autentizace a autorizace:** Bezpečné přihlášení s rozlišením rolí (User, Admin, SuperAdmin).
+*   **Správa dat (CRUD):** Plná administrace studentů (včetně nahrávání fotografií) a uživatelů.
 *   **Dynamický obsah:** Flexibilní správa obsahu webu.
 *   **Komunikace:** Kontaktní formulář pro odesílání e-mailů pomocí PHPMailer.
 *   **Zabezpečená administrace:** Oddělená část `/admin` s vylepšeným přesměrováním a kontrolou přístupu.
+*   **validace a zabezpečení vstupů**
 
 ---
 
@@ -21,6 +25,7 @@ Projekt je postaven na moderním PHP s důrazem na **objektově orientované pro
 *   **MySQL / MariaDB:** Databáze s kódováním `utf8mb4` pro plnou podporu diakritiky.
 *   **Frontend:** HTML5, CSS3 (Bootstrap 5), JavaScript.
 *   **Composer:** Správa závislostí (PHPMailer atd.).
+*   **PHPMailer**
 
 ---
 
@@ -28,7 +33,7 @@ Projekt je postaven na moderním PHP s důrazem na **objektově orientované pro
 
 ### 1. Klonování projektu
 ```bash
-git clone https://github.com/tvuj-repozitar.git
+git clone https://github.com/zkom01/php-student-management-system
 cd projekt
 ```
 
@@ -91,9 +96,13 @@ Aplikace prošla procesem "profi úklidu", který zahrnuje:
 *   **Bezpečné přesměrování:** Ochrana adresářové struktury pomocí hlaviček v `index.php` souborech.
 
 ---
-
-## 📄 Licence
-Tento projekt je určen pro studijní účely.
+## 📌 Projekt demonstruje
+*   **backend development v PHP**
+*   **návrh databázových systémů**
+*   **autentizaci a autorizaci**
+*   **práci s CRUD operacemi**
+*   **zabezpečení webových aplikací**
+*   **práci s Composerem a externími knihovnami**
 
 ## 👨‍💻 Autor
 Zdeněk Komárek
@@ -101,4 +110,4 @@ Zdeněk Komárek
 ---
 
 ### Poznámka:
-Vždy mluvíme česky a to vždy. Pokud potřebuješ v README něco změnit nebo doplnit specifické technické detaily, stačí napsat!
+Pokud potřebuješ v README něco změnit nebo doplnit specifické technické detaily, stačí napsat!
