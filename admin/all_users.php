@@ -50,6 +50,7 @@
                             <?= htmlspecialchars($one_user['first_name']) . " " . htmlspecialchars($one_user['second_name']) ?>
                         </h2>
                         <p>Práva: <?= htmlspecialchars($one_user['role'])?></p>
+                        <p><?= htmlspecialchars($one_user['email'])?></p>
                         <section class="buttons-container">
                             <a href="one_user.php?id=<?= $one_user['id'] ?>" class="btn btn-primary">Detail</a>
                         </section>
