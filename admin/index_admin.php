@@ -15,7 +15,7 @@
 ?>
 
 <?php 
-    $pageTitle = "Úvodní strana"; // Tady definujete název stránky, který se zobrazí v záložce prohlížeče
+    $pageTitle = "Vysoká škola ZKOM"; // Tady definujete název stránky, který se zobrazí v záložce prohlížeče
     require '../assets/header_admin.php'; ?> <!-- přidáme hlavičku stránky -->
 
     <?php require '../assets/flash_message.php'; ?> <!-- přidáme soubor pro zobrazení hlášek -->

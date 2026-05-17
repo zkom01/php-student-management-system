@@ -2,6 +2,16 @@ header {
     display: flex;
     align-items: center;
     background-color: #0d3558;
+
+     /* NOVÉ: Zafixování na vrchu bez vyjmutí z toku stránky */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    /* NOVÉ: Permanentní stín pod lištou */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
 }
 
 /* Logo a ikona menu budou mít stejnou šířku (např. 20%) */

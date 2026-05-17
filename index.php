@@ -8,7 +8,7 @@
         Url::redirectUrl("./admin/index_admin.php"); 
     }
 
-    $pageTitle = "Úvodní strana"; // Tady definujete název stránky, který se zobrazí v záložce prohlížeče
+    $pageTitle = "Vysoká škola ZKOM"; // Tady definujete název stránky, který se zobrazí v záložce prohlížeče
     require './assets/header.php'; 
     
 ?>
