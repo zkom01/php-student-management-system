@@ -12,6 +12,15 @@
     $conn = $dbClass->connectionDB();
     
     $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT); // získáme a validujeme ID uživatele z URL pro načtení jeho informací do formuláře
+
+     $user_to_action = UserDB::infoUser($conn, $id);
+    if ($user_to_action['data']['role'] === 'super_admin') {
+        // Nepovolit akci ani jinému super_adminovi
+        Url::flashMessage('Nedvolená operace.', 'error');
+        Url::redirectUrl('../admin/all_users.php');
+        exit;
+    }
+
     if (!$id || $id <= 0) {
         Url::flashMessage('Neplatné ID uživatele.', 'error');
         Url::redirectUrl('../admin/all_users.php');

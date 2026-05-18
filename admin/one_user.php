@@ -41,7 +41,9 @@
                     <?php $u = $oneUser['data']; // Pomocná proměnná pro kratší kód ?>
                     
                     <h2><?= htmlspecialchars($u['first_name']) . " " . htmlspecialchars($u['second_name']) ?></h2>
-                    <p>E-mail: <?= htmlspecialchars($u['email']) ?></p>
+                    <?php if ($u['role'] != "super_admin"):?>
+                        <p>E-mail: <?= htmlspecialchars($u['email']) ?></p>
+                    <?php endif ?>
                     <p>Role: <?= htmlspecialchars($u['role'] ?? 'uživatel') ?></p>
                     
                 <?php endif ?>
@@ -49,7 +51,7 @@
     
     <?php if (is_array($oneUser) && $oneUser['success']): ?>
         <section class="buttons-container">
-            <?php if ($_SESSION['role_user_log_in'] === "super_admin"): ?>
+            <?php if ($_SESSION['role_user_log_in'] === "super_admin" && $u['role'] != "super_admin"):?>
                 <a href="edit_user.php?id=<?= $id ?>" class="btn btn-primary">Upravit uživatele</a>
                 <a href="delete_user.php?id=<?= $id ?>" class="btn btn-secondary">Smazat uživatele</a>
             <?php endif ?>
