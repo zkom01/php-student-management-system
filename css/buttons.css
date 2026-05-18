@@ -65,3 +65,26 @@
     box-shadow: none !important; /* Odstraní fialovou záři, pokud ji tam máte */
     transform: scale(1); /* Jemné zvětšení */
 }
+
+#scrollTopBtn {
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    min-width: 80px;
+    height: 48px;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out, transform 0.3s ease-in-out; /* Plynulé zjevení */
+    transform: translateY(20px);  /* Drobný posun dolů */
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);    /* Vrátí se na původní pozici (vypadá to jako vyjetí nahoru) */
+}
