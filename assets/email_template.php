@@ -18,7 +18,7 @@
                                 <tr>
                                     <td style="border-bottom: 1px solid #1f5f93;">
                                         <strong style="color: white;">Odesílatel:</strong><br>
-                                        <span style="font-size: 18px;" border-bo>{{name}}</span>
+                                        <span style="font-size: 18px;">{{name}}</span>
                                     </td>
                                 </tr>
                                 <tr>
