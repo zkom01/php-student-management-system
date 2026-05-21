@@ -32,7 +32,7 @@ Projekt je postaven na moderním PHP s důrazem na **objektově orientované pro
 ## 🚀 Instalace
 
 ### 1. Klonování projektu
-```git
+```powershell
 git clone https://github.com/zkom01/php-student-management-system
 cd projekt
 ```
