@@ -3,6 +3,7 @@
 configDB.php
 .env
 .gitignore
+.vscode
 
 
 # --- LOGY ---
